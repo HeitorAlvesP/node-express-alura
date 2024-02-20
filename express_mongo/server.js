@@ -1,7 +1,5 @@
 import app from "./src/app.js";
 
-const PORT = 3000
-
-app.listen(PORT,() => {
+app.listen(3000,() => {
     console.log('Porta 3000')
 })
