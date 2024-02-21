@@ -1,8 +1,7 @@
 import mongoose from "mongoose";
 
 async function conectaNaDataBAse() {
-    mongoose.connect("mongodb+srv://heitor_dev:heitor_dev@clientes.xhdenmz.mongodb.net/livros?retryWrites=true&w=majority");
-    
+    mongoose.connect(process.env.DB_CONECTION_STRING);
     return mongoose.connection;
 }
 
