@@ -9,7 +9,7 @@ conexao.on("error", (erro) => {
 })
 
 conexao.once("open", () => {
-    console.log("Conexão com bd ok")
+    console.log("Conexão db ok")
 })
 
 const app = express();
