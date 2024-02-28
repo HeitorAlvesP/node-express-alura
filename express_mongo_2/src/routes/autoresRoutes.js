@@ -1,7 +1,7 @@
-import express from "express";
-import AutorController from "../controllers/autoresController.js";
+import express from "express"
+import AutorController from "../controllers/autoresController.js"
 
-const router = express.Router();
+const router = express.Router()
 
 router
   .get("/autores", AutorController.listarAutores)
@@ -10,4 +10,4 @@ router
   .put("/autores/:id", AutorController.atualizarAutor)
   .delete("/autores/:id", AutorController.excluirAutor)
 
-export default router;   
+export default router   
