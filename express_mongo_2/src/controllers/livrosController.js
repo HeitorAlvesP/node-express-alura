@@ -6,6 +6,7 @@ class LivroController {
     try {
       const livrosResultado = await livros.find()
         .populate("autor")
+        
         .exec()
 
       res.status(200).json(livrosResultado)
